@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    body{
+        @apply bg-yellow-200;
+    }
+    
+    .cell{
+        @apply w-[7.5rem] h-[7.5rem] border-solid border-[2px] border-black shadow-sm text-[5rem] cursor-pointer;
+    }
+
+    #title{
+        @apply text-[2rem] py-[1rem] font-bold; 
+    }
+
+    #title span{
+        @apply text-red-600;
+    }
+
+    #gameContainer{
+        @apply font-tic text-center;
+    }
+
+    #cellContainer{
+        @apply grid grid-cols-3 w-[22.5rem] mx-auto;
+    }
+
+    #statusText{
+        @apply mt-[2rem] text-[2rem] text-red-600 font-bold italic;
+    }
+
+    #restartBtn{
+        @apply bg-black text-white p-[1rem] rounded-[5px] mt-[1.5rem];
+    }
+
+    #restartBtn:active{
+        @apply bg-red-600;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
